@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Ético de Uso de IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 min-h-screen">
+    <div class="container mx-auto px-4 py-6 max-w-6xl">
+        <!-- Header -->
+        <header class="bg-white/90 backdrop-blur rounded-xl p-6 mb-6 shadow-lg">
+            <h1 class="text-3xl font-bold text-center bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-4">
+                Portal Ético de IA
+            </h1>
+            <nav class="flex justify-center gap-4 flex-wrap">
+                <button onclick="showPage('inicio')" class="nav-btn px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition active">Inicio</button>
+                <button onclick="showPage('consejos')" class="nav-btn px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition">Consejos</button>
+                <button onclick="showPage('casos')" class="nav-btn px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition">Casos</button>
+                <button onclick="showPage('reflexiones')" class="nav-btn px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition">Reflexiones</button>
+                <button onclick="showPage('recursos')" class="nav-btn px-4 py-2 bg-purple-500 text-white rounded-full hover:bg-purple-600 transition">Recursos</button>
+            </nav>
+        </header>
+
+        <!-- Content -->
+        <main class="bg-white/90 backdrop-blur rounded-xl p-6 shadow-lg min-h-[500px]">
+            
+            <!-- Página Inicio -->
+            <div id="inicio" class="page">
+                <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Uso Responsable de IA en Educación</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 p-4 rounded-lg hover:shadow-md transition">
+                        <div class="text-blue-500 text-3xl mb-2">🎯</div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Uso Responsable</h3>
+                        <p class="text-gray-600 text-sm">La IA como herramienta de apoyo, no sustituto del pensamiento crítico.</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg hover:shadow-md transition">
+                        <div class="text-purple-500 text-3xl mb-2">⚖️</div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Integridad</h3>
+                        <p class="text-gray-600 text-sm">Mantén la honestidad académica aprovechando la tecnología.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg hover:shadow-md transition">
+                        <div class="text-green-500 text-3xl mb-2">🧠</div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Pensamiento Crítico</h3>
+                        <p class="text-gray-600 text-sm">Evalúa y valida información generada por IA.</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        La Inteligencia Artificial puede revolucionar tu aprendizaje, pero su uso debe ser ético y responsable. 
+                        Aprende a usarla como complemento, no como sustituto de tu trabajo académico.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Página Recursos -->
+            <div id="recursos" class="page hidden">
+                <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Recursos y Enlaces</h2>
+                
+                <div class="space-y-6">
+                    <!-- Artículos -->
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">📖 Artículos Recomendados</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+                                <h4 class="font-semibold text-blue-600 mb-2">Ética en IA para Estudiantes</h4>
+                                <p class="text-gray-600 text-sm mb-2">Principios fundamentales del uso responsable de IA en educación</p>
+                                <a href="#" class="text-blue-500 hover:underline text-sm">Leer artículo →</a>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+                                <h4 class="font-semibold text-blue-600 mb-2">Integridad Académica Digital</h4>
+                                <p class="text-gray-600 text-sm mb-2">Cómo mantener la honestidad en la era de la IA</p>
+                                <a href="#" class="text-blue-500 hover:underline text-sm">Leer artículo →</a>
+                            </div>
+                            <p class="underline">LINKS NO FUNCIONALES</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Videos -->
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">🎥 Videos Educativos</h3>
+                        <div class="space-y-3">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <h4 class="font-semibold text-green-600 mb-1">"El Futuro de la IA en Educación"</h4>
+                                <p class="text-gray-600 text-sm mb-2">Conferencia sobre uso ético de IA • 45 min</p>
+                                <a href="#" class="text-green-500 hover:underline text-sm">Ver video →</a>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <h4 class="font-semibold text-green-600 mb-1">"Cómo Citar IA en Trabajos Académicos"</h4>
+                                <p class="text-gray-600 text-sm mb-2">Tutorial práctico • 15 min</p>
+                                <a href="#" class="text-green-500 hover:underline text-sm">Ver video →</a>
+                            </div>
+                            <p class="underline">LINKS NO FUNCIONALES</p>
+                        </div>
+                    </div>
+                   
+                    
+                    <!-- Guías -->
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">📋 Guías Prácticas</h3>
+                        <ul class="space-y-2">
+                            <li class="bg-white p-3 rounded-lg shadow-sm">
+                                <a href="#" class="text-purple-600 hover:underline font-medium">Manual de Ética Digital para Estudiantes</a>
+                                <p class="text-gray-600 text-sm">Guía completa sobre responsabilidad digital</p>
+                            </li>
+                            <li class="bg-white p-3 rounded-lg shadow-sm">
+                                <a href="#" class="text-purple-600 hover:underline font-medium">Checklist: Uso Ético de IA</a>
+                                <p class="text-gray-600 text-sm">Lista de verificación antes de usar IA</p>
+                            </li>
+                            <li class="bg-white p-3 rounded-lg shadow-sm">
+                                <a href="#" class="text-purple-600 hover:underline font-medium">Plantillas para Citar IA</a>
+                                <p class="text-gray-600 text-sm">Formatos APA, MLA y Chicago para IA</p>
+                            </li>
+                        </ul>
+                        <p class="underline">LINKS NO FUNCIONALES</p>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Página Consejos -->
+            <div id="consejos" class="page hidden">
+                <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Consejos Éticos</h2>
+                
+                <div id="consejos-lista" class="space-y-4">
+                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                        <h3 class="font-semibold text-gray-800 mb-2">💡 Usa IA como guía</h3>
+                        <p class="text-gray-600 text-sm">Genera ideas con IA, pero desarrolla tus propias conclusiones y verifica toda información.</p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+                        <h3 class="font-semibold text-gray-800 mb-2">📝 Siempre cita el uso</h3>
+                        <p class="text-gray-600 text-sm">Sé transparente sobre cuándo y cómo utilizaste herramientas de IA.</p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                        <h3 class="font-semibold text-gray-800 mb-2">🔍 Verifica información</h3>
+                        <p class="text-gray-600 text-sm">Las IA pueden generar errores. Siempre contrasta con fuentes académicas.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                        <h3 class="font-semibold text-gray-800 mb-2">🎯 Define límites claros</h3>
+                        <p class="text-gray-600 text-sm">Establece reglas sobre cuándo usar IA según el tipo de trabajo académico.</p>
+                    </div>
+                    
+                    <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-400">
+                        <h3 class="font-semibold text-gray-800 mb-2">🤝 Desarrolla tu voz única</h3>
+                        <p class="text-gray-600 text-sm">Mantén tu estilo personal y perspectiva única en cada trabajo académico.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-6">
+                    <button id="mostrar-mas-consejos" onclick="mostrarMasConsejos()" 
+                            class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">
+                        Mostrar más consejos
+                    </button>
+                </div>
+            </div>
+
+            <!-- Página Casos -->
+            <div id="casos" class="page hidden">
+                <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Casos de Estudio</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-green-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition" onclick="openModal('caso1')">
+                        <div class="text-green-500 text-3xl mb-2">✅</div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Uso Correcto</h3>
+                        <p class="text-gray-600 text-sm">María usa IA para generar ideas, pero desarrolla sus propias conclusiones.</p>
+                    </div>
+                    
+                    <div class="bg-red-50 p-4 rounded-lg cursor-pointer hover:shadow-md transition" onclick="openModal('caso2')">
+                        <div class="text-red-500 text-3xl mb-2">❌</div>
+                        <h3 class="font-semibold text-gray-800 mb-2">Uso Incorrecto</h3>
+                        <p class="text-gray-600 text-sm">Juan copia respuestas directamente sin entender el proceso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Página Reflexiones -->
+            <div id="reflexiones" class="page hidden">
+                <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Reflexiones de Estudiantes</h2>
+                
+                <form id="reflexionForm" class="max-w-md mx-auto space-y-4">
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required 
+                           class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-purple-400">
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required 
+                           class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-purple-400">
+                    <textarea id="mensaje" name="mensaje" placeholder="Tu reflexión sobre el uso ético de IA..." required rows="4" 
+                              class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-purple-400"></textarea>
+                    <button type="submit" class="w-full bg-purple-500 text-white py-3 rounded-lg hover:bg-purple-600 transition">
+                        Enviar Reflexión
+                    </button>
+                </form>
+                
+                <div id="mensaje-confirmacion" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mt-4 max-w-md mx-auto text-center">
+                    ¡Gracias por compartir tu reflexión!
+                </div>
+
+                <div class="mt-8">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-center">Reflexiones Compartidas</h3>
+                        <button onclick="borrarMensajes()" 
+                                class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition text-sm">
+                            Borrar mensajes
+                        </button>
+                    </div>
+                    <div id="reflexionesList" class="space-y-3"></div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modales -->
+    <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-6 max-w-md mx-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 id="modal-title" class="text-xl font-bold"></h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+            </div>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
